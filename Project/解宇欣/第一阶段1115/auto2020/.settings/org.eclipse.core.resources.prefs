@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//conf/template.html=UTF-8
+encoding//src/com/webtest/core/BaseTest.java=UTF-8
+encoding//src/com/webtest/core/MailUtil.java=UTF-8
+encoding//src/com/webtest/dataprovider/MysqlDataProvider.java=UTF-8
+encoding/testng.xml=UTF-8
