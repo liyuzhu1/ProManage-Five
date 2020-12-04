@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
+import com.webtest.dataprovider.NSDataProvider;
 
 public class AdminTestDemo extends BaseTest {
 //	登录后台,进入内容页面
@@ -272,15 +273,15 @@ public class AdminTestDemo extends BaseTest {
 	}
 
 //	18、后台登陆（用户名错误）
-	@Test
-	public void test_b9() throws InterruptedException {
-		webtest.type("id=username", "admin");
-		webtest.type("id=password", "admin");
+	@Test(dataProvider = "excel_login", dataProviderClass = NSDataProvider.class)
+	public void test_b9(String s1, String s2, String s3, String s4) throws InterruptedException {
+		webtest.type("id=username", s1);
+		webtest.type("id=password", s2);
 		webtest.click("xpath=//input[@type='submit']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//a[@title='安全退出管理中心']");
-		webtest.type("id=username", "test");
-		webtest.type("id=password", "admin");
+		webtest.type("id=username", s3);
+		webtest.type("id=password", s2);
 		Thread.sleep(2000);
 		webtest.click("xpath=//input[@type='submit']");
 		Thread.sleep(1000);
@@ -289,15 +290,15 @@ public class AdminTestDemo extends BaseTest {
 	}
 
 //	19、后台登陆（密码错误）
-	@Test
-	public void test_c1() throws InterruptedException {
-		webtest.type("id=username", "admin");
-		webtest.type("id=password", "admin");
+	@Test(dataProvider = "excel_login", dataProviderClass = NSDataProvider.class)
+	public void test_c1(String s1, String s2, String s3, String s4) throws InterruptedException {
+		webtest.type("id=username", s1);
+		webtest.type("id=password", s2);
 		webtest.click("xpath=//input[@type='submit']");
 		Thread.sleep(2000);
 		webtest.click("xpath=//a[@title='安全退出管理中心']");
-		webtest.type("id=username", "admin");
-		webtest.type("id=password", "123456");
+		webtest.type("id=username", s1);
+		webtest.type("id=password", s4);
 		Thread.sleep(2000);
 		webtest.click("xpath=//input[@type='submit']");
 		Thread.sleep(1000);

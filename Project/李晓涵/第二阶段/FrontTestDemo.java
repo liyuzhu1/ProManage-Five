@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
+import com.webtest.dataprovider.NSDataProvider;
 
 public class FrontTestDemo extends BaseTest {
 //	ÍøÕ¾µÇÂ¼
@@ -115,14 +116,14 @@ public class FrontTestDemo extends BaseTest {
 	}
 
 //	42¡¢µÇÂ¼Ç°¶Ë
-	@Test
-	public void test9() throws InterruptedException {
+	@Test(dataProvider = "excel9", dataProviderClass = NSDataProvider.class)
+	public void test9(String s1, String s2) throws InterruptedException {
 		webtest.mouseToElementandClick("xpath=//a[text()='ÓÃ»§µÇÂ¼']");
 		Thread.sleep(1000);
-		webtest.type("id=username", "aaa");
+		webtest.type("id=username", s1);
 		Thread.sleep(1000);
 		webtest.click("id=password2");
-		webtest.type("id=password", "123456");
+		webtest.type("id=password", s2);
 		Thread.sleep(1000);
 		webtest.click("xpath=//input[@type='button']");
 		Thread.sleep(1000);
