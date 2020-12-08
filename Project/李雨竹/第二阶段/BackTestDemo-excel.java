@@ -535,6 +535,9 @@ public class BackTestDemo extends BaseTest {
 	}
 
 	//邮件-邮件服务器设置
+	//邮件服务器设置保存后，会出现浏览器弹窗，此弹窗必须手动关闭无法获取其元素。
+	//若运行过程中手动关闭此弹窗，则此测试用例成功
+	//若无手动关闭，则会报错。
 	@Test(dataProvider = "excel26",dataProviderClass = NSDataProvider.class)
 	public void test31(String s1,String s2,String s3,String s4,String s5) throws InterruptedException {
 		Thread.sleep(5000);
