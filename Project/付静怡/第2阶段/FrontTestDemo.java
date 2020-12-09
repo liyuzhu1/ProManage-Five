@@ -21,8 +21,8 @@ public class FrontTestDemo extends BaseTest{
 	public void test1(String s1) throws InterruptedException {
 		webtest.click("xpath=//a[text()='网站导航']");
 		Thread.sleep(1000);
-		webtest.click("xpath=*[@id=\"login_head_div\"]/div/div/div/ul[1]/li[10]/a");
-		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='职场问答']");
+		Thread.sleep(3000);
 		webtest.type("id=askkeyword", s1);
 		webtest.click("xpath=//input[@type='submit']");
 		Thread.sleep(3000);
@@ -31,8 +31,8 @@ public class FrontTestDemo extends BaseTest{
 	@Test(priority=2)  //职场问答-我要提问
 	public void test2() throws InterruptedException {
 		webtest.click("xpath=//a[text()='网站导航']");
-		webtest.click("xpath=*[@id=\"login_head_div\"]/div/div/div/ul[1]/li[10]/a");
-		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='职场问答']");
+		Thread.sleep(3000);
 		webtest.click("xpath=/html/body/div[5]/div/div[2]/div/div[2]/a");
 		Thread.sleep(3000);
 	}

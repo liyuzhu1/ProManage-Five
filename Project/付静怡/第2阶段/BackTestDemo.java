@@ -244,7 +244,8 @@ public class BackTestDemo extends BaseTest{
 		webtest.click("xpath=//span[text()='类别']");
 		webtest.click("xpath=//a[text()='行业类别']");
 		webtest.enterFrame1("name=right");
-		webtest.click("xpath=//*[@id=\"list35\"]/td[5]/a");
+		webtest.click("xpath=//input[@value='840']");
+		webtest.click("xpath=//input[@value='删除所选']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//a[text()='确定']");
 		webtest.leaveFrame();
@@ -287,7 +288,8 @@ public class BackTestDemo extends BaseTest{
 		webtest.click("xpath=//span[text()='类别']");
 		webtest.click("xpath=//a[text()='兼职分类']");
 		webtest.enterFrame1("name=right");
-		webtest.click("xpath=//*[@id=\"list2\"]/td[5]/a[2]");
+		webtest.click("xpath=//input[@value='27']");
+		webtest.click("xpath=//input[@value='删除所选']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//a[text()='确定']");
 		webtest.click("xpath=//a[text()='系统']");
@@ -364,7 +366,8 @@ public class BackTestDemo extends BaseTest{
 		webtest.click("xpath=//span[text()='管理员']"); 
 		webtest.click("xpath=//a[text()='管理员日志']");
 		webtest.enterFrame1("name=right");
-		webtest.click("xpath=//*[@id=\"list262\"]/td[6]/a");
+		webtest.click("xpath=//input[@value='484']");
+		webtest.click("xpath=//input[@value='删除所选']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//a[text()='确定']");
 		webtest.click("xpath=//a[text()='系统']");
@@ -377,7 +380,8 @@ public class BackTestDemo extends BaseTest{
 		webtest.click("xpath=//span[text()='管理员']"); 
 		webtest.click("xpath=//a[text()='会员日志']");
 		webtest.enterFrame1("name=right");
-		webtest.click("xpath=//*[@id=\"list21\"]/td[7]/a");
+		webtest.click("xpath=//input[@value='20']");
+		webtest.click("xpath=//input[@value='删除所选']");
 		webtest.leaveFrame();
 		webtest.click("xpath=//a[text()='确定']");
 		webtest.click("xpath=//a[text()='系统']");
