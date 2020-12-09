@@ -1,6 +1,7 @@
 package com.webtest.demo;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.apache.commons.compress.archivers.sevenz.CLI;
 import org.apache.poi.ss.formula.functions.T;
@@ -10,6 +11,11 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.NSDataProvider;
+
+
+/*
+ * 何佳 测试类（前后台）
+ * */
 
 public class ExcelTest extends BaseTest{
 	
@@ -237,7 +243,7 @@ public class ExcelTest extends BaseTest{
 		webtest.type("name=name", s1);
 		Thread.sleep(1000);
 		webtest.click("name=comquestion");
-		webtest.isDisplayed("xpath=//a[text()='广告管理']");
+		assertTrue(webtest.isTextPresent("wap问答"));
 		Thread.sleep(1000);
 	}
 	
@@ -266,7 +272,7 @@ public class ExcelTest extends BaseTest{
 		webtest.type("id=word_info", s2);
 		Thread.sleep(1000);
 		webtest.click("name=submit");
-		webtest.isDisplayed("xpath=//a[text()='广告管理']");
+		assertTrue(webtest.isTextPresent("搜索类型："));
 		Thread.sleep(1000);
 	}
 	
@@ -279,7 +285,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 //		webtest.enterFrame1("name=right");
 		webtest.click("xpath=//a[text()='更新广告缓存']");
-		webtest.isDisplayed("xpath=//a[text()='广告管理']");
+		assertTrue(webtest.isTextPresent("搜索类型："));
 		Thread.sleep(1000);
 	}
 	
@@ -325,8 +331,8 @@ public class ExcelTest extends BaseTest{
 		webtest.type("id=word_info", s2);
 		Thread.sleep(1000);
 		webtest.click("name=submit");
-		webtest.isDisplayed("xpath=//a[text()='添加广告']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("搜索类型："));
 		webtest.leaveFrame();
 	}
 	
@@ -349,6 +355,7 @@ public class ExcelTest extends BaseTest{
 		webtest.click("name=add");
 		webtest.isDisplayed("xpath=//a[text()='广告类别']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("类别名称："));
 		webtest.leaveFrame(); 
 	}
 	
@@ -405,6 +412,7 @@ public class ExcelTest extends BaseTest{
 		webtest.type("name=keyword", s1);
 		Thread.sleep(1000);
 		webtest.click("name=news_search");
+		assertTrue(webtest.isTextPresent("4"));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -425,6 +433,7 @@ public class ExcelTest extends BaseTest{
 		webtest.leaveFrame(); 
 		webtest.click("xpath=//a[text()='确定']");
 		Thread.sleep(2000);
+		assertTrue(webtest.isTextPresent("消费记录"));
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
 	}
 	
@@ -442,6 +451,7 @@ public class ExcelTest extends BaseTest{
 		webtest.type("name=keyword", s1);
 		Thread.sleep(1000);
 		webtest.click("name=news_search");
+		assertTrue(webtest.isTextPresent("关键字：kkkhj"));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -466,6 +476,7 @@ public class ExcelTest extends BaseTest{
 		webtest.click("name=insert");
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("后台充值"));
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
 	}
 	
@@ -490,6 +501,7 @@ public class ExcelTest extends BaseTest{
 		webtest.click("xpath=/html/body/div/div[5]/form/table/tbody/tr[8]/td/input");
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("后台充值"));
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
 	}
 	
@@ -511,6 +523,7 @@ public class ExcelTest extends BaseTest{
 		webtest.click("xpath=/html/body/div[1]/div[3]/form/table/tbody/tr[5]/td/div/div/div/div/dl/dd[2]");
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[1]/div[3]/form/table/tbody/tr[16]/td/input[2]");
+		assertTrue(webtest.isTextPresent("搜索专题："));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -528,6 +541,7 @@ public class ExcelTest extends BaseTest{
 		webtest.type("name=keyword", s1);
 		Thread.sleep(1000);
 		webtest.click("name=news_search");
+		assertTrue(webtest.isTextPresent("关键字：test"));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -544,6 +558,7 @@ public class ExcelTest extends BaseTest{
 		webtest.click("id=apost");
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("推广营稍 "));
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
 	}
 	
@@ -555,6 +570,7 @@ public class ExcelTest extends BaseTest{
 		webtest.enterFrame1("name=right");
 		webtest.click("xpath=//a[text()='企业会员']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("企业名称"));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -570,6 +586,7 @@ public class ExcelTest extends BaseTest{
 		webtest.enterFrame1("name=right");
 		webtest.click("xpath=//a[text()='新增职位']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("公司名称"));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -583,6 +600,7 @@ public class ExcelTest extends BaseTest{
 		webtest.enterFrame1("name=right");
 		webtest.click("xpath=//a[text()='新增简历']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("简历名称"));
 		webtest.leaveFrame(); 
 		Thread.sleep(1000);
 //		assertEquals(webtest.isElementPresent("link=首页置顶"), false);
@@ -593,6 +611,7 @@ public class ExcelTest extends BaseTest{
 	
 	
 	
+//	@BeforeMethod
 	@Test(priority = 32)
 	public void test_login() throws InterruptedException {
 		webtest.open("");
@@ -623,6 +642,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[4]/div[5]/div[4]/div[6]/a");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent(s1));
 	}
 	
 	
@@ -634,6 +654,7 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[4]/div[5]/div[4]/div[1]/div[2]/div[2]/div/a[1]");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("工作地点：北京"));
 		webtest.click("xpath=//a[text()='工作地点：北京']");
 		Thread.sleep(1000);
 	}
@@ -647,6 +668,7 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='计算机/互联网']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("行业：计算机/互联网"));
 		webtest.click("xpath=//a[text()='行业：计算机/互联网']");
 		Thread.sleep(1000);
 	}
@@ -660,6 +682,7 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='50-200人']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("规模：50-200人"));
 		webtest.click("xpath=//a[text()='规模：50-200人']");
 		Thread.sleep(1000);
 	}
@@ -684,9 +707,11 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=//*[@id=\"atn_5\"]");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("hj"));
 	}
 	
 	
+	//清除已选的检索条件
 	@Test(priority = 38)
 	public void test36() throws InterruptedException {
 //		webtest.click("xpath=//a[text()='网站导航']");
@@ -698,6 +723,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[4]/div[5]/div[4]/div[6]/div/div/a");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("hj"));
 		webtest.click("xpath=/html/body/div[2]/div/div[1]/div/a/img");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='[安全退出]']");
@@ -729,6 +755,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[1]/div[1]/div/div[3]/div[1]/div[2]/div[2]/form/div/input[5]");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent(s3));
 		webtest.click("xpath=/html/body/div/header/div[1]/div/div[1]/a/img");
 		Thread.sleep(1000);
 		webtest.getWindow(1);
@@ -748,6 +775,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[5]/div[2]/div[1]/form/div[3]/input[2]");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent(s1));
 		webtest.click("xpath=//a[text()='模特']");
 		Thread.sleep(1000);
 	}
@@ -761,6 +789,7 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[5]/div[2]/div[1]/form/div[1]/div[2]/div[2]/div/a[1]");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("工作地点：北京"));
 		webtest.click("xpath=//a[text()='工作地点：北京']");
 		Thread.sleep(1000);
 	}
@@ -774,9 +803,10 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='平面模特']");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("礼仪模特"));
 		webtest.click("xpath=/html/body/div[2]/div/div[2]/ul/li[6]/a");
 		Thread.sleep(1000);
-		webtest.getWindow(0);
+		webtest.getWindow(1);
 	}
 	
 	
@@ -821,7 +851,8 @@ public class ExcelTest extends BaseTest{
 		webtest.type("name=authcode", s6);
 		Thread.sleep(1000);
 		webtest.click("id=botton");
-		Thread.sleep(10000);
+		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("我要发布简历"));
 	}
 	
 	
@@ -833,6 +864,7 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[9]/div/div/div/div[2]/div[2]/div[1]/a");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("你可能感兴趣的普工"));
 		webtest.click("xpath=/html/body/div[2]/div/div[2]/ul/li[6]/a");
 		Thread.sleep(1000);
 	}
@@ -846,6 +878,7 @@ public class ExcelTest extends BaseTest{
 //		Thread.sleep(1000);
 		webtest.click("xpath=/html/body/div[9]/div/form/div/div[2]/div[2]/div[2]/div/a[1]");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("北京"));
 	}
 
 	
@@ -856,6 +889,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("id=search_button");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("测试工程师"));
 	}
 	
 	
@@ -869,6 +903,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='招聘/面试']");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("招聘/面试"));
 	}
 	
 	
@@ -880,6 +915,7 @@ public class ExcelTest extends BaseTest{
 	//	Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='薪酬制度']");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("薪酬制度"));
 	}
 	
 	
@@ -891,6 +927,7 @@ public class ExcelTest extends BaseTest{
 	//	Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='加班/考勤']");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("加班/考勤"));
 	}
 	
 	
@@ -902,6 +939,7 @@ public class ExcelTest extends BaseTest{
 	//	Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='员工管理']");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("员工管理"));
 	}
 	
 	
@@ -913,6 +951,7 @@ public class ExcelTest extends BaseTest{
 	//	Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='合同/试用']");
 		Thread.sleep(10000);
+		assertTrue(webtest.isTextPresent("合同/试用"));
 	}
 	
 	
@@ -924,6 +963,7 @@ public class ExcelTest extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='附近职位']");
 		Thread.sleep(1000);
+		assertTrue(webtest.isTextPresent("附近暂无职位"));
 	}
 	
 	
