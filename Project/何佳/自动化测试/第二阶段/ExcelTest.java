@@ -15,6 +15,8 @@ import com.webtest.dataprovider.NSDataProvider;
 
 /*
  * 何佳 测试类（前后台）
+ * 后台：运营模块，首页界面
+ * 前台：找企业、兼职职位、普工专区、HR工具箱、附近职位
  * */
 
 public class ExcelTest extends BaseTest{
