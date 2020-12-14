@@ -1,3 +1,12 @@
+代码中：全体成员分为前后台两个类编写测试用例代码
+李雨竹：data 、demo包  、dataprovider.NSDataProvider类
+李晓涵：dataLixiaohan、lixiaohan包、dataprovider.NSDataProviderLixiaohan类
+解宇欣：dataXieyuxin、xieyuxin包、dataprovider.NSDataProviderXieyuxin类
+何佳：dataHejia、hejia包、dataprovider.NSDataProviderHejia类
+付静怡：dataFujingyi、fujingyi包、dataprovider.NSDataProviderFujingyi类
+
+
+
 代码执行前提条件：
 
 （李雨竹）后台工具模块、前台首页、个人中心：

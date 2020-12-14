@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" parallel="none">
+	<listeners>
+		<listener class-name="com.webtest.freemarker.FreemarkerListener"></listener>
+	</listeners>
+	<test name="t2" preserve-order="true">
+		<classes>	
+		
+			<class name="com.webtest.xieyuxin.ExcelTestFront"/>
+			<class name="com.webtest.fujingyi.FrontTestDemo"/>
+			<class name="com.webtest.demo.FrontTestDemo"/>
+			<class name="com.webtest.hejia.ExcelFrontTest"/>
+			<class name="com.webtest.lixiaohan.FrontTestDemo"/>
+
+	 		<class name="com.webtest.xieyuxin.ExcelTestBack"/>
+			<class name="com.webtest.hejia.ExcelTest"/>
+			<class name="com.webtest.lixiaohan.AdminTestDemo"/>
+			<class name="com.webtest.demo.BackTestDemo"/>
+			<class name="com.webtest.fujingyi.BackTestDemo"/>
+			 
+			
+			
+			
+		<!-- 
+		<class name="com.webtest.demo.FrontTestDemo"/>
+			<class name="com.webtest.lixiaohan.FrontTestDemo"/>
+			<class name="com.webtest.fujingyi.FrontTestDemo"/>
+			<class name="com.webtest.lixiaohan.FrontTestDemo"/>
+			<class name="com.webtest.hejia.ExcelFrontTest"/>
+			<class name="com.webtest.demo.FrontTestDemo"/>
+			<class name="com.webtest.xieyuxin.ExcelTestFront"/>
+			
+			<class name="com.webtest.xieyuxin.ExcelTestBack"/>
+			<class name="com.webtest.hejia.ExcelTest"/>
+			<class name="com.webtest.lixiaohan.AdminTestDemo"/>
+			<class name="com.webtest.demo.BackTestDemo"/>
+			<class name="com.webtest.fujingyi.BackTestDemo"/>
+		 -->	
+		 	
+
+		</classes>
+	</test>
+
+</suite>
