@@ -41,7 +41,7 @@
 			<div class="login"><a href="">Sign in</a></div>
 			<div class="search">
 				<div class="searchInfo">search or jump to...</div>
-				<img src="/BTF/phpyunF/TestManagement/img/search.png" />
+				<img src="img/search.png" />
 			</div>
 		</div>
 	</div>
