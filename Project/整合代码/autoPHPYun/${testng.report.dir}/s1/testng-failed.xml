@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.webtest.freemarker.FreemarkerListener"/>
+  </listeners>
+  <test thread-count="5" name="t2(failed)">
+    <classes>
+      <class name="com.webtest.demo.BackTestDemo">
+        <methods>
+          <include name="test17" invocation-numbers="0"/>
+          <include name="test14"/>
+          <include name="test19"/>
+          <include name="test18"/>
+          <include name="test12" invocation-numbers="0"/>
+          <include name="test11"/>
+          <include name="test16" invocation-numbers="0"/>
+          <include name="test13"/>
+          <include name="doBeforeClass"/>
+          <include name="test10"/>
+          <include name="test15" invocation-numbers="0"/>
+          <include name="testLogin_admin"/>
+          <include name="doAfterMethod"/>
+          <include name="test09" invocation-numbers="0"/>
+          <include name="test06"/>
+          <include name="test03"/>
+          <include name="test08" invocation-numbers="0"/>
+          <include name="test07" invocation-numbers="0"/>
+          <include name="testLogin_close"/>
+          <include name="test01" invocation-numbers="0"/>
+          <include name="test20" invocation-numbers="0"/>
+          <include name="test22" invocation-numbers="0"/>
+          <include name="test05"/>
+          <include name="test02" invocation-numbers="0"/>
+          <include name="test04"/>
+        </methods>
+      </class> <!-- com.webtest.demo.BackTestDemo -->
+      <class name="com.webtest.lixiaohan.FrontTestDemo">
+        <methods>
+          <include name="test1"/>
+          <include name="doAfterMethod"/>
+          <include name="test5"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test_login"/>
+          <include name="test2"/>
+          <include name="test7"/>
+          <include name="test8"/>
+          <include name="doBeforeClass"/>
+          <include name="test6"/>
+        </methods>
+      </class> <!-- com.webtest.lixiaohan.FrontTestDemo -->
+      <class name="com.webtest.demo.FrontTestDemo">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="testB7" invocation-numbers="0"/>
+          <include name="testB5" invocation-numbers="0"/>
+          <include name="testA5" invocation-numbers="0"/>
+          <include name="testB6" invocation-numbers="0"/>
+          <include name="testB3" invocation-numbers="0"/>
+          <include name="testB4" invocation-numbers="0"/>
+          <include name="testB1" invocation-numbers="0"/>
+          <include name="testC2" invocation-numbers="0"/>
+          <include name="testA1" invocation-numbers="0"/>
+          <include name="testB2" invocation-numbers="0"/>
+          <include name="testC3" invocation-numbers="0"/>
+          <include name="testB0" invocation-numbers="0"/>
+          <include name="testC1" invocation-numbers="0"/>
+          <include name="testA8" invocation-numbers="0"/>
+          <include name="testB9" invocation-numbers="0"/>
+          <include name="doBeforeClass"/>
+          <include name="testB8" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.webtest.demo.FrontTestDemo -->
+      <class name="com.webtest.hejia.ExcelFrontTest">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test_login"/>
+          <include name="test41" invocation-numbers="0"/>
+          <include name="test40"/>
+          <include name="test42"/>
+          <include name="test45"/>
+          <include name="test44" invocation-numbers="0"/>
+          <include name="test50"/>
+          <include name="test35" invocation-numbers="0"/>
+          <include name="test46"/>
+          <include name="test38" invocation-numbers="0"/>
+          <include name="test49"/>
+          <include name="test37" invocation-numbers="0"/>
+          <include name="test48"/>
+          <include name="test39"/>
+          <include name="test36"/>
+          <include name="test47"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.hejia.ExcelFrontTest -->
+      <class name="com.webtest.xieyuxin.ExcelTestFront">
+        <methods>
+          <include name="doAfterMethod"/>
+          <include name="test8" invocation-numbers="0"/>
+          <include name="test9" invocation-numbers="0"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.xieyuxin.ExcelTestFront -->
+    </classes>
+  </test> <!-- t2(failed) -->
+</suite> <!-- Failed suite [s1] -->
