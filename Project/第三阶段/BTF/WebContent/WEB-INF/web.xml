@@ -14,10 +14,7 @@
 	</welcome-file-list>
 	
 	
-	
 	<servlet>
-		<description>This is the description of my J2EE component</description>
-		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>AddManageTest</servlet-name>
 		<servlet-class>controller.AddManageTest</servlet-class>
 	</servlet>
@@ -33,8 +30,6 @@
 	
 	
 	<servlet>
-		<description>This is the description of my J2EE component</description>
-		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>EditManageTest</servlet-name>
 		<servlet-class>controller.EditManageTest</servlet-class>
 	</servlet>
@@ -50,8 +45,6 @@
 	
 	
 	<servlet>
-		<description>This is the description of my J2EE component</description>
-		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>DeleteManageTest</servlet-name>
 		<servlet-class>controller.DeleteManageTest</servlet-class>
 	</servlet>
@@ -67,8 +60,6 @@
 	
 	
 	<servlet>
-		<description>This is the description of my J2EE component</description>
-		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>ListManageTest</servlet-name>
 		<servlet-class>controller.ListManageTest</servlet-class>
 	</servlet>

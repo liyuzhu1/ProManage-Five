@@ -23,7 +23,6 @@ import service.ManageTestServiceImpl;
 /**
  * Servlet implementation class EditServlet
  */
-//@WebServlet("/phpyunF/TestManagement/Modify/modify")
 public class EditManageTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -40,8 +39,6 @@ public class EditManageTest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		
 		doPost(request, response);
 	}
 
@@ -50,7 +47,6 @@ public class EditManageTest extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
 		response.setContentType("text/html;charset=utf-8");
 		request.setCharacterEncoding("utf-8");
 		HttpSession session = request.getSession();
@@ -60,13 +56,8 @@ public class EditManageTest extends HttpServlet {
 		
 		if (dos.equals("before")) {
 			String ids = request.getParameter("id");
-			System.out.println(ids);
-			System.out.println("获取到想修改的id号啦");
 			Integer id = Integer.parseInt(ids);
-			System.out.println(id);
-			System.out.println("准备根据id号获取此行内容啦");
 			ManageTest mangeTest= new ManageTestServiceImpl().getManageTest(id);
-			System.out.println("获取到此行内容啦");
 			session.setAttribute("editmanagetest", mangeTest);
 			response.sendRedirect("modify.jsp");
 			return;

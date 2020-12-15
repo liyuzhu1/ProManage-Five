@@ -26,7 +26,6 @@ public class ManageTest implements Serializable{
 			this.requestBodyType = requestBodyType;
 			this.body = body;
 			this.response = response;
-
 		}
 	 
 		public ManageTest() {

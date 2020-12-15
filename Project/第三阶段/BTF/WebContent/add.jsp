@@ -47,21 +47,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<h1>新增页面</h1>
 			<form action="add" method="post">
 				<div id="div0">
-					<div class="div1"><input type="hidden" name="id" value="${editmanagetest.id }"></div>
-	 				<div class="div1"><span>id:</span><input id="input-id" name="id" value="${editmanagetest.id }"><br> </div>
-					<div class="div1"><span>name：</span><input id="input-name" name="name" value="${editmanagetest.name }"><br> </div>
-					<div class="div1"><span>domain：</span><input id="input-domain" name="domain" value="${editmanagetest.domain }"><br> </div>
-					<div class="div1"><span>url： </span><input id="input-url" name="url" value="${editmanagetest.url }"><br> </div>
-					<div class="div1"><span>method：</span> <input id="input-method" name="method" value="${editmanagetest.method }"><br> </div>
-					<div class="div1"><span>headers： </span><input id="input-headers" name="headers" value="${editmanagetest.headers }"><br></div> 
-					<div class="div1"><span>cookies： </span><input id="input-cookies" name="cookies" value="${editmanagetest.cookies }"><br> </div>
-					<div class="div1"><span>requestBodyType：</span> <input id="input-type" name="requestBodyType" value="${editmanagetest.requestBodyType }"><br></div> 
-					<div class="div1"><span>body： </span><input name="body" id="input-body" value="${editmanagetest.body }"><br> </div>
-					<div class="div1"><span>response：</span> <input id="input-response" name="response" value="${editmanagetest.response }"><br> </div>
+	 				<div class="div1"><span>id:</span><input id="input-id" name="id" ><br> </div>
+					<div class="div1"><span>name：</span><input id="input-name" name="name"><br> </div>
+					<div class="div1"><span>domain：</span><input id="input-domain" name="domain"><br> </div>
+					<div class="div1"><span>url： </span><input id="input-url" name="url"><br> </div>
+					<div class="div1"><span>method：</span> <input id="input-method" name="method"><br> </div>
+					<div class="div1"><span>headers： </span><input id="input-headers" name="headers"><br></div> 
+					<div class="div1"><span>cookies： </span><input id="input-cookies" name="cookies"><br> </div>
+					<div class="div1"><span>requestBodyType：</span> <input id="input-type" name="requestBodyType"><br></div> 
+					<div class="div1"><span>body： </span><input name="body" id="input-body"><br> </div>
+					<div class="div1"><span>response：</span> <input id="input-response" name="response"><br> </div>
 					<input class="submit" type="submit" value="增加"> <input class="reset" type="reset">
 				</div>
- 				
 			</form>
+			
 		</div>
 	</div>
 </body>

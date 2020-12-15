@@ -18,7 +18,6 @@ import service.ManageTestServiceImpl;
 /**
  * Servlet implementation class AddEmployee
  */
-//@WebServlet("/add")
 public class AddManageTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -37,8 +36,7 @@ public class AddManageTest extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// response.getWriter().append("Served at: ").append(request.getContextPath());
-//		doPost(request, response);
+
 	}
 
 	/**
@@ -48,14 +46,11 @@ public class AddManageTest extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// doGet(request, response);
 		response.setContentType("text/html;charset=utf-8");
 		request.setCharacterEncoding("utf-8");
 		HttpSession session = request.getSession();
 		PrintWriter out = response.getWriter();
   
-		//ManageTestDao ud = new ManageTestDaoImpl();
-
 		String ids = request.getParameter("id");
 		int id = Integer.parseInt(ids);
 		String name = request.getParameter("name");
@@ -84,8 +79,7 @@ public class AddManageTest extends HttpServlet {
 		
 		boolean isSaved = new ManageTestServiceImpl().addManageTest(manageTest);
 		if (isSaved) {
-			//request.setAttribute("msg", "员工新增成功！");
-//			out.print("<script>alert('新增成功！');window.location='list';</script>");
+
 			out.print("<script>alert('新增成功！');</script>");
 			response.sendRedirect("list");
 		} 

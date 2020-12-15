@@ -16,8 +16,6 @@ import service.ManageTestServiceImpl;
 /**
  * Servlet implementation class ListEmployee
  */
-
-//@WebServlet("/display")
 public class ListManageTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -34,7 +32,6 @@ public class ListManageTest extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		List<Map<String, Object>> list =new ManageTestServiceImpl().listManageTest();
 		request.setAttribute("manageTests", list);
 		request.getRequestDispatcher("display.jsp").forward(request, response);
