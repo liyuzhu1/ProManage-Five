@@ -1,0 +1,242 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+h1{
+	margin-left:300px;
+}
+
+/* 头部导航栏 */
+.topNav{
+	height:50px;
+	width: 100%;
+	background-color: #edf2fb;
+}
+/* 登录注册 */
+.regAndSign{
+	float: right;
+	margin-right: 40px;
+	height: 50px;
+	line-height: 50px;
+}
+.regAndSign a{
+	color: #034078;
+}
+.register{
+	float: right;
+	/* 字体粗细 */
+	/* font-weight: 600; */
+}
+.split{
+	float: right;
+	color: #034078;
+	/* font-weight: 600; */
+	margin-right: 10px;
+}
+.login{
+	float: right;
+	/* font-weight: 600; */
+	margin-right: 10px;
+}
+.search{
+	margin-right: 80px;
+	margin-top: 10px;
+	width: 200px;
+	height: 38px;
+	float: right;
+}
+.searchInfo{
+	display: block;
+	width: 174px;
+	height: 24px;
+	margin-top: 4px;
+	border: 1px solid #034078;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	color: #034078;
+	text-align: center;
+	line-height: 24px;
+	opacity: 0.5;
+	float: right;
+}
+.search img{
+	display: block;
+	margin-top: 10px;
+	width: 18px;
+	opacity: 0.7;
+}
+
+
+/* 除上方导航栏全部界面 */
+.allPage{
+	height:2400px;
+	width:100%;
+	background-color:#EDF2FB 
+}
+/*左侧导航栏 */
+.leftNav{
+	height: 100%;
+	width: 180px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color:#034078;
+	float: left;
+	box-shadow: 0px 2px 8px #132f8d;
+	/* box-shadow: h-shadow v-shadow blur spread color inset; */
+}
+.logo{
+	margin-top: 40px;
+	width: 180px;
+	height: 100px;
+}
+.logo img{
+	width: 180px;
+}
+
+/* .nav:nth-child(1){
+	margin-top: 80px;
+} */
+.nav{		
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-top:11px;/*(40-18)/2;height减font-size然后除以2*/
+	/* border-bottom: 1px solid white; */
+	text-align: center;
+	/* box-shadow: 0px 0px 20px whitesmoke inset; */
+}
+.nav a{
+	/* 单行垂直居中 */
+	height:40px;
+	line-height:40px;
+	/* 防止内容超出容器或产生自动换行 */
+	overflow:hidden;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: "微软雅黑";
+	color: white;
+	text-indent: 20px;
+}
+
+/* 右侧内容 */
+.rightPage{
+	width: calc(100% - 200px);
+	/* margin-left: 200px; */
+	float: right;
+	height: 2400px;
+	background-color:#EDF2FB;
+	position:relative;
+}
+#div0{
+	margin-left:80px;
+}
+.div1{
+	margin-top:40px;
+	margin-left:10px;
+}
+#input-id{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-name{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-domain{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-url{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-method{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-headers{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-cookies{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-type{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-body{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+#input-response{
+	height:45px;
+	width:400px;
+	position:absolute;
+	left:400px;
+	border-radius: .5em;
+}
+
+.submit{
+	width:150px;
+	height:60px;
+	border:none;
+	background:#034078;
+	color:white;
+	font-size:22px;
+	margin-top:80px;
+	margin-left:30px;
+	border-radius: .8em;
+}
+.reset{
+	width:150px;
+	height:60px;
+	border:none;
+	background:#034078;
+	color:white;
+	font-size:22px;
+	margin-top:80px;
+	margin-left:200px;
+	border-radius: .8em;
+}
+span{
+	font-size:25px;
+}
